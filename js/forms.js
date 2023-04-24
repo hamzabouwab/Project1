@@ -1,17 +1,15 @@
-
+import {menuLinksHoverEffect} from '../js/linksEffect.js'
 const inputs=document.querySelectorAll("input:not(input[type='submit'])")
 const pass=document.querySelectorAll("input[type='password']")
 const submit=document.querySelector("#submit")
-const formContainer=document.querySelectorAll(".form-container")
-const menu= document.querySelector(".menu")
-const menuLinks= document.querySelectorAll(".menu .nav-item .nav-link")
-const hoverEffect= document.querySelector("span.hoverEffect")
 const regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
 inputs.forEach(element => {
   element.addEventListener("focus",()=>{
     element.classList.remove("err")
   })
 });
+
 if(submit.nodeType!=null){
 submit.addEventListener("click",(e)=>{
   let i = 0
@@ -58,27 +56,3 @@ submit.addEventListener("click",(e)=>{
     } 
 })
 }
- function menuLinksHoverEffect(){
-  menuLinks.forEach(link => {
-    link.addEventListener("mouseover",()=>{
-      hoverEffect.style.transform="scale(1) "
-      hoverEffect.style.borderRadius="6px"
-      hoverEffect.style.left=link.offsetLeft+"px" ;
-      hoverEffect.style.top=link.offsetTop+"px"
-      hoverEffect.style.width=link.offsetWidth+"px";
-      hoverEffect.style.opacity="1";
-    })
-  });
-  menuLinks.forEach(link => {
-    link.addEventListener("mouseleave",()=>{
-      hoverEffect.style.left=link.offsetLeft+"px" ;
-      hoverEffect.style.transform=" scale(0)";
-      hoverEffect.style.borderRadius="20px";
-      hoverEffect.style.opacity="0";
-      
-    })
-  });
-}
-
-const test = menuLinksHoverEffect()
-export default test

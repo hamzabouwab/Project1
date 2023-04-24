@@ -1,4 +1,6 @@
-import {test} from 'forms.js'
+
+const formContainer=document.querySelectorAll(".form-container")
+const menu= document.querySelector(".menu")
 const search=document.getElementById("search")
 const menuLinks=document.querySelectorAll(".menu .nav-item .nav-link")
 menuLinks.forEach(link => {
@@ -6,7 +8,6 @@ menuLinks.forEach(link => {
             link.style.backgroundColor="red"
       })
 });
-
 
 //AJAX to get table data
 search.addEventListener("keyup",()=>{
@@ -46,4 +47,3 @@ search.addEventListener("keyup",()=>{
       xmlHTTP.open(method,url,option)
       xmlHTTP.send()
       })
-test
