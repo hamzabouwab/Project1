@@ -54,7 +54,7 @@
             <a class="nav-link text-primary" href="/project1/login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/project1/signup.html" id="register">Register</a>
+            <a class="nav-link text-white btn-danger" href="/project1/signup.html" id="register">Register</a>
           </li>
         </ul>
       </div>

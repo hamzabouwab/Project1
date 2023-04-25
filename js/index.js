@@ -2,12 +2,6 @@
 const formContainer=document.querySelectorAll(".form-container")
 const menu= document.querySelector(".menu")
 const search=document.getElementById("search")
-const menuLinks=document.querySelectorAll(".menu .nav-item .nav-link")
-menuLinks.forEach(link => {
-      link.addEventListener("click",()=>{
-            link.style.backgroundColor="red"
-      })
-});
 
 //AJAX to get table data
 search.addEventListener("keyup",()=>{

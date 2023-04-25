@@ -11,7 +11,6 @@ $conn=new mysqli();
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $addedValue="";
 // Create connection
 $GLOBALS['conn'] = new mysqli($servername, $username, $password,$dbName);
 
