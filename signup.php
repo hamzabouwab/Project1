@@ -26,9 +26,9 @@ if(isset($_POST['firstName'])){
                echo("Email already existed");
             }else{
               $sql="insert into `users`(first_name,last_name,email,birthday,password) values ('".$fName."','".$lName."','".$email."','".$birthday."','".$password."')";
-            if ($conn->query($sql) === TRUE) {
+            if($conn->query($sql) === TRUE) {
               header('location:index.php');
-            } else {
+            }else{
               echo "Error: " . $sql . "<br>" . $conn->error;
               header('refresh:2;url=signup.html'); 
             }

@@ -1,7 +1,16 @@
-
 const formContainer=document.querySelectorAll(".form-container")
 const menu= document.querySelector(".menu")
 const search=document.getElementById("search")
+const navLinks = document.querySelectorAll(".menu .nav-item .nav-link")
+navLinks.forEach(link=>{
+      link.addEventListener("click",()=>{
+            navLinks.forEach(element => {
+                  element.classList.remove("active")
+            });
+            link.classList.add("active")
+      })
+})
+
 
 //AJAX to get table data
 search.addEventListener("keyup",()=>{

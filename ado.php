@@ -19,5 +19,4 @@ if ($GLOBALS['conn']->connect_error) {
   die("Connection failed: " . $GLOBALS['conn']->connect_error);
 }
 }
-
 ?>

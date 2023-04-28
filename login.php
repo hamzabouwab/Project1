@@ -8,11 +8,12 @@ if(isset($_POST['email'])){
      $password=sanitize($password);
      connectToDb("test");
      $sql = "SELECT * from `users` where email='$email'";
+     
      $result = $conn->query($sql);
      if ($result->num_rows === 1) {
        while($row = $result->fetch_assoc()){
         if(password_verify($password,$row['password'])){
-          echo 'Login successfuly'; 
+          echo 'Login successfuly';
         }else{
           echo 'password incorrect !'; 
         }
@@ -26,6 +27,5 @@ if(isset($_POST['email'])){
   }else{
   header('location:login.html'); 
 }
-
 
 ?>

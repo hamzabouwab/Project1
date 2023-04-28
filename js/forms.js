@@ -1,9 +1,12 @@
-import {menuLinksHoverEffect} from '../js/linksEffect.js'
 const inputs=document.querySelectorAll("input:not(input[type='submit'])")
 const pass=document.querySelectorAll("input[type='password']")
-const submit=document.querySelector("#submit")
 const regex=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
+
+
+
+signHoverEffect.style.width=signLinks[1].offsetWidth+"px"
+signHoverEffect.style.left=signLinks[1].offsetLeft+"px";
 inputs.forEach(element => {
   element.addEventListener("focus",()=>{
     element.classList.remove("err")

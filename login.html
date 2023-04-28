@@ -20,15 +20,22 @@
     <!-- place navbar here -->
     <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white bg-opacity-75 text-center py-3 ">
       <div class="container">
-          <a class="navbar-brand d-flex" href="#">Navbar</a>
+          <a class="navbar-brand d-flex" href="#">
+            <a class="navbar-brand" href="#">
+              <img src="https://cdn.worldvectorlogo.com/logos/eizo-2.svg" class="img-fluid opacity-75
+            " width="120px"/>
+            </a>
+          </a>
           <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="custom-navbar-toggler-icon" style="--i:-1"></span>
+          <span class="custom-navbar-toggler-icon" style="--i:0"></span>
+          <span class="custom-navbar-toggler-icon"
+          style="--i:1"></span>
         </button>
         <div class="collapse navbar-collapse px-0 pt-2 pt-md-0 ps-md-5"  id="collapsibleNavId">
           <ul class="navbar-nav mt-2 mt-md-0  mt- mt-lg-0 menu">
-            <span class="hoverEffect"></span>
-
+            <span id="menuHoverEffect" class="hoverEffect"></span>
             <li class="nav-item">
               <a class="nav-link" href="/project1/index.php#hero" >
                   <i class="fa fa-home"></i>
